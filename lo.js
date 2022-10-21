@@ -7,7 +7,7 @@ let max;
 function changeWidth(){
     if(finalValue!=NaN && max!=NaN && finalValue<=max){    
         progress.style.height=`${(finalValue/max)*100}%`;
-        statu.innerText=`${(finalValue/max)*100}%`;
+        statu.innerText=`${Math.ceil((finalValue/max)*100)}%`;
     }
         if(finalValue>max){    
             alert("Max value is less than Input Value");
